@@ -33,3 +33,15 @@ describe 'creating bears table' do
     expect(@db.execute("PRAGMA table_info(bears);").detect { |arr| arr[-1] == 1 && arr[2] == "INTEGER" }.length).to eq(6)
   end
 end
+CREAT TABLE bears (
+    id INTEGER PRIMARY KEY,
+   name TEXT,
+    age INTEGER,
+    gender TEXT,
+    color TEXT,
+    temperament Text,
+    alive BOOLEAN
+  
+
+);
+
